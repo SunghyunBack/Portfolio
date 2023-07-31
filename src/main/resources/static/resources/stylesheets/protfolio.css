@@ -1,0 +1,1012 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+
+* {
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Noto Serif KR', serif;
+
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+button {
+    display: block;
+}
+
+.menu-list {
+    height: 100vh;
+    width: 6rem;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-list > .main-list > .list {
+    width: 20rem;
+    list-style-type: none;
+    padding: 20px;
+    position: relative;
+}
+
+/*.menu-list > .main-list > button {*/
+/*    display: none;*/
+/*}*/
+
+.menu-list > .main-list > .list > .item {
+    margin-left: 8rem;
+    padding-right: 7.5rem;
+    margin-bottom: 1.5rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.menu-list > .main-list > .list > .item > a > .item-button {
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    /*background-color: rgb(137, 207, 240);*/
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    box-shadow: 0 0 3px #007bff;
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+    padding: 0;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.menu-list > .main-list > .list > .item > a > .button-stretch:hover {
+    width: 160px;
+    color: white;
+    background-color: #007bff;
+}
+
+
+.menu-list > .main-list > .list > .item > a > .item-button > .icon-cover {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.menu-list > .main-list > .list > .item > a > .item-button > .icon-cover > i {
+    position: relative;
+}
+
+.menu-list > .main-list > .list > .item > a > .item-button > .text {
+    left: 70px;
+    top: 20px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-list > .main-list2 {
+    display: none;
+}
+
+.mainContainer {
+    width: 100%;
+    height: auto;
+    padding-left: 7rem;
+    display: block;
+}
+
+.mainContainer > .item {
+    width: 99%;
+    height: 100vh;
+}
+
+.mainContainer > .item > a {
+    position: absolute;
+}
+
+
+.mainContainer > .item > .step-1-1 {
+    width: 95.5%;
+    height: 100%;
+    padding-left: 6rem;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContainer > .item > .step-1-1 > h1 {
+    margin-bottom: 0.3rem;
+    font-size: MIN(4rem, 10vw);
+    font-weight: 700;
+    line-height: 56px;
+
+}
+
+
+.mainContainer > .item > .step-1-1 > .h2 > .h2-span-2 {
+    color: transparent;
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.mainContainer > .item > .step-1-1 > .h2 {
+font-size: MIN(2rem, 4.4vw);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.mainContainer > .item > .step-1-1 > .h2 > .h2-span-2::after {
+
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    content: "imagination";
+    color: #007bff;
+    display: block;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 1.8s steps(30);
+}
+
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 8rem;
+    }
+}
+
+.mainContainer > .item > .step-1-1 > .icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mainContainer > .item > .step-1-1 > .icon > div > a > img {
+    padding-left: 2rem;
+}
+
+
+
+
+.mainContainer > .step-2 {
+
+}
+
+.mainContainer > .step-2 > a {
+    position: absolute;
+}
+
+.mainContainer > .step-2 > .step-2-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.mainContainer > .step-2 > .step-2-1 > header {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border-bottom: 2px solid gray;
+    width: 23%;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .sub-title {
+    font-size: 1.3rem;
+    width: 90%;
+    margin-bottom: 1.5rem;
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .sub-title > span {
+    text-align: center;
+}
+
+
+.mainContainer > .step-2 > .step-2-1 > .information {
+    width: 94%;
+    height: 40rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .photo {
+    width: 45vw;
+    height: 60vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .photo > img {
+    width: 90%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text {
+    width: 80%;
+    height: 90%;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > h3 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    font-family: "Raleway", sans-serif;
+    color: #728394;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .self {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site {
+    width: 51%;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site > p {
+    margin-bottom: 1.6rem;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site > p > i {
+    color: lightgray;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site > p > a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #007bff;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site2 {
+    width: 49%;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site2 > p {
+    text-decoration: none;
+
+    margin-bottom: 1.6rem;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site2 > p > i {
+    color: lightgray;
+}
+
+.mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site2 > p > a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #007bff;
+}
+
+.mainContainer > .step-3 {
+    /*height: auto;*/
+}
+
+.mainContainer > .step-3 > a {
+    position: absolute;
+}
+
+.mainContainer > .step-3 > .step-3-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContainer > .step-3 > .step-3-1 > header {
+    width: 20%;
+    height: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+    border-bottom: 2px solid gray;
+}
+
+
+.mainContainer > .step-3 > .step-3-1 > .skill-contain {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill {
+    width: 30%;
+    height: 30rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill > .title {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill > .icon {
+    padding-bottom: 1rem;
+}
+
+.mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill > .text {
+    height: 12rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+}
+
+
+.mainContainer > .step-4 > a {
+    position: absolute;
+}
+
+.mainContainer > .step-4 > .step-4-1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40rem;
+}
+
+.mainContainer > .step-4 > .step-4-1 > header {
+    width: 20rem;
+    height: 3rem;
+    border-bottom: 2px solid gray;
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary {
+
+    width: 90%;
+    height: 33rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox {
+    /*border: 1px solid red;*/
+    width: 75%;
+    height: 95%;
+    position: relative;
+    overflow: hidden;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px solid red;*/
+
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > ul {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 90%;
+    display: flex;
+
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > ul .animated {
+    -webkit-transition: left 0.5s ease-in;
+    transition: 0.5s ease-out;
+}
+
+/* 가로는 %로 세로는 크기로*/
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > ul > li {
+
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: 1px solid black;
+
+}
+
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide {
+    border: 1px solid gray;
+    border-radius: 2%;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-img {
+    width: 65%;
+    height: 100%;
+
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2.5%;
+
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text {
+    width: 35%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text > .text{
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text > .text > p {
+    padding-bottom: 0.5rem;
+}
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text > .text > p > span>h3{
+    /*text-align: center;*/
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text > .text > div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text > .url {
+    width: 80%;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text > .url > .p5 {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text > .url > .p5 > a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #007bff;
+    text-align: center;
+
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide5 {
+    background-color: green;
+    /*margin-left: 320rem;*/
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > button {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 7%;
+    height: 5rem;
+    z-index: 999999;
+    display: inline-block;
+    background-color: white;
+    /*background-position: center center;*/
+
+
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .left-button {
+    font-size: 2rem;
+    margin-left: -44.5%;
+    border-style: none;
+}
+
+.mainContainer > .step-4 > .step-4-1 > .boundary > .right-button {
+    font-size: 2rem;
+    margin-left: 36.8%;
+    border-style: none;
+}
+
+
+/* 테블릿 크기*/
+@media screen and (max-width: 960px) {
+
+    body {
+        scroll-behavior: smooth;
+        font-family: 'Noto Serif KR', serif;
+    }
+    .menu-list {
+        width: 5%;
+        height: 100%;
+    }
+
+    .menu-list > .main-list {
+        display: none;
+    }
+
+
+    .menu-list > .main-list2 {
+        /*display: block;*/
+        width: 70%;
+        height: 50%;
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-list > .main-list2 > .list {
+        width: 10%;
+        height: 30%;
+        list-style-type: none;
+
+    }
+
+    .menu-list > .main-list2 > .list > .item {
+        width: 100%;
+        height: 14%;
+        margin-bottom: 0.6rem;
+    }
+
+    .menu-list > .main-list2 > .list > .item > a {
+
+    }
+
+    .menu-list > .main-list2 > .list > .item > a > .item-button {
+        background-color: white;
+        border-radius: 50%;
+        border-style: none;
+
+    }
+
+
+    .menu-list > .main-list2 > .list > .item > a > .item-button > .icon-cover > i {
+        left: 4px;
+        position: relative;
+        cursor: pointer;
+        color: lightgray;
+
+    }
+
+    .menu-list > .main-list2 > .list > .item > a > .item-button > .icon-cover > i:hover {
+        color: #007bff;
+    }
+
+
+    .mainContainer {
+        padding: 0;
+        test-size-adjust:auto;
+/*height: auto;*/
+    }
+
+
+    .mainContainer > .step-1 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .mainContainer > .item > .step-1-1 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    .mainContainer > .item > .step-1-1 > h1{
+
+    }
+
+
+
+    .mainContainer > .item > .step-1-1 > .h2 > .h2-span-2 {
+        color: transparent;
+        margin-bottom: 0.3rem;
+        font-weight: 400;
+        line-height: 1.5;
+        overflow: hidden;
+    }
+
+    .mainContainer > .item > .step-1-1 > .h2 {
+
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .mainContainer > .item > .step-1-1 > .h2 > .h2-span-2::after {
+
+        margin-top: 0.2rem;
+        margin-left: 0.5rem;
+        content: "imagination";
+        color: #007bff;
+        display: block;
+        overflow: hidden;
+        border-right: 1px solid black;
+        animation: typing 1.8s steps(30);
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 8rem;
+        }
+    }
+
+    .mainContainer > .step-2 {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+
+    .mainContainer > .step-2 > a {
+        position: absolute;
+
+    }
+
+    .mainContainer > .step-2 > .step-2-1 {
+
+
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > header {
+        font-size: 2rem;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        width: 40%;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .sub-title {
+
+        width: 90%;
+        height: 10rem;
+        padding-bottom: 2rem;
+
+        text-align: center;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .sub-title > span {
+        font-size: 1.25rem;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information {
+        width: 90%;
+        padding-bottom: 2rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .photo {
+        width: 80%;
+        height: 100%;
+        margin-top: 1rem;
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text {
+        padding-top: 0.5rem;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > h5 {
+        margin-bottom: 0.5rem;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > .self {
+        margin-bottom: 0.5rem;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site {
+        width: 100%;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site > p {
+        margin-bottom: 0.25rem;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site2 {
+        width: 100%;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site2 > p {
+        margin-bottom: 0.25rem;
+    }
+
+
+    .mainContainer > .step-3 {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .mainContainer > .step-3 > .step-3-1 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContainer > .step-3 > .step-3-1 > header {
+
+        text-align: center;
+        width: 20rem;
+        height: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        margin: 0 0 1rem 0;
+    }
+
+
+    .mainContainer > .step-3 > .step-3-1 > .skill-contain {
+        top: 5rem;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: unset;
+        padding-top: 4rem;
+    }
+
+    .mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill {
+        top: 13rem;
+        width: 26.3rem;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill > .title {
+        width: 100%;
+        height: 2rem;
+        /*font-size: 1.8rem;*/
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill > .icon {
+        height: 5rem;
+        padding-bottom: 0;
+    }
+
+    .mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill > .text {
+        width: 75%;
+        height: 10rem;
+        font-family: 'Montserrat', sans-serif;
+        line-height: normal;
+    }
+
+    .mainContainer > .step-4 {
+        width: 100%;
+  /*height: 100%;*/
+
+
+    }
+
+    .mainContainer > .step-4 > .step-4-1 {
+        height: 38rem;
+    }
+
+    .mainContainer > .step-4 > .step-4-1 > header {
+        margin: 2rem 0 0 0;
+    }
+
+    .mainContainer > .step-4 > .step-4-1 > .boundary {
+        height: 30rem;
+    }
+
+    .mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox{
+        width: 60vw;
+    }
+
+    .mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-img {
+        width: 100%;
+        height: 90%;
+
+    }
+
+    .mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-img > img {
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text {
+        width: 100%;
+        height: 10%;
+    }
+
+    .mainContainer > .step-4 > .step-4-1 > .boundary > .slidebox > .slides > .slide > .project-text > .text {
+        display: none;
+    }
+    .mainContainer > .step-4 > .step-4-1 > .boundary > .left-button {
+        font-size: 2rem;
+        margin-left: -36.5vw;
+        border-style: none;
+    }
+
+    .mainContainer > .step-4 > .step-4-1 > .boundary > .right-button {
+        font-size: 2rem;
+        margin-left: 29.6vw;
+        border-style: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 530px){
+    .mainContainer > .step-1 > .step-1-1 > h1{
+
+    }
+    .mainContainer > .step-1 > .step-1-1 > h2{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    }
+
+    .mainContainer > .item > .step-1-1 > .h2 > .h2-span-2 {
+        color: transparent;
+        margin-bottom: 0.3rem;
+        font-weight: 400;
+        line-height: 1.5;
+        /*overflow: hidden;*/
+    }
+
+    .mainContainer > .item > .step-1-1 > .h2 {
+
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .mainContainer > .item > .step-1-1 > .h2 > .h2-span-2::after {
+
+        margin-top: 0.2rem;
+        margin-left: 0.5rem;
+        content: "imagination";
+        color: #007bff;
+        display: block;
+        overflow: hidden;
+        border-right: 1px solid black;
+        animation: typing 1.8s steps(30);
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 8rem;
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 373px) {
+
+    .mainContainer > .step-2 > .step-2-1 > header {
+        margin: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        width: 40%;
+    }
+
+    .mainContainer > .step-3 > .step-3-1 > header {
+
+        padding: 1rem;
+        text-align: center;
+        width: 20rem;
+        height: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        /*font-size: 3rem;*/
+    }
+
+}
+
+

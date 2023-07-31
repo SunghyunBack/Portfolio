@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sunghyun's portfolio</title>
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/protfolio.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" th:href="@{/resources/images/favicon.png}" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b28bd20964.js" crossorigin="anonymous"></script>
+    <script defer th:src="@{/resources/scripts/protfolio.js}"></script>
+</head>
+<body>
+
+
+<div class="menu-list">
+    <div class="main-list">
+        <ul class="list">
+            <li class="item">
+                <a href="#step-1">
+                    <button class="item-button button-stretch">
+                        <div class="icon-cover">
+                            <i class="fa-solid fa-house fa-xl"></i>
+                        </div>
+                        <span class="text">Home</span>
+                    </button>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#step-2">
+                    <button class="item-button button-stretch">
+                        <div class="icon-cover">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                        </div>
+                        <span class="text">About</span>
+                    </button>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#step-3">
+                    <button class="item-button button-stretch">
+                        <div class="icon-cover">
+                            <i class="fa-solid fa-lightbulb fa-xl"></i>
+                        </div>
+                        <span class="text">Skill</span>
+                    </button>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#step-4">
+                    <button class="item-button button-stretch">
+                        <div class="icon-cover">
+                            <i class="fa-solid fa-file-arrow-down fa-xl"></i>
+                        </div>
+                        <span class="text">Project</span>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-list2">
+        <ul class="list">
+            <li class="item">
+                <a href="#step-1">
+                    <button class="item-button">
+                        <div class="icon-cover">
+                            <i class="fa-solid fa-circle fa-l"></i>
+                        </div>
+                    </button>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#step-2">
+                    <button class="item-button">
+                        <div class="icon-cover">
+                            <i class="fa-solid fa-circle fa-l"></i>
+                        </div>
+                    </button>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#step-3">
+                    <button class="item-button">
+                        <div class="icon-cover">
+                            <i class="fa-solid fa-circle fa-l"></i>
+                        </div>
+                    </button>
+                </a>
+            </li>
+            <li class="item">
+                <a href="#step-4">
+                    <button class="item-button">
+                        <div class="icon-cover">
+                            <i class="fa-solid fa-circle fa-l"></i>
+                        </div>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="mainContainer">
+    <div class="item step-1">
+        <a name="step-1"></a>
+        <div class="step-1-1">
+            <h1>Sunghyun Back</h1>
+            <h2 class="h2">
+                <span class="h2-span-1">Development grows with</span>
+                <span class="h2-span-2"></span>
+            </h2>
+            <div class="icon">
+                <div>
+                    <a href="https://github.com/SunghyunBack" target="_blank">
+                        <img th:src="@{../resources/images/icons8-github-50.png}" alt="깃허브">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.notion.so/Back-Sung-Hyun-c9f91a3228204368a7fd9f5052cf0468?pvs=4" target="_blank">
+                        <img th:src="@{../resources/images/icons8-notion-50.png}" alt="노션">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://bbackcoding.tistory.com/" target="_blank">
+                        <img th:src="@{../resources/images/Tistory-icon_50x50.png}" alt="티스토리">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item step-2">
+        <a name="step-2"></a>
+        <div class="step-2-1">
+            <header>ABOUT ME</header>
+            <div class="sub-title">
+                <span>상상한 것을 배운 기술로 구현해 가는 과정이
+                재미있습니다. <br>시도를 두려워하기 보다는 멈추어있는것을 두려워하는 개발자가 되겠습니다.
+                </span>
+            </div>
+            <div class="information">
+                <div class="photo">
+                    <img th:src="@{../resources/images/대표사진.jpg}" alt="">
+                </div>
+                <div class="text">
+                    <h3>Web Developer & Back-End Developer.</h3>
+                    <h5>SungHyun Back</h5>
+                    <div class="self">
+                        많은 것을 배우고 기획하고 구현하여 개발하고 싶은 개발 초년생입니다. <br> 개발에 관련된 지식을 배우는 것을 즐깁니다.
+                    </div>
+                    <div class="brief">
+                        <div class="site">
+                            <p><i class="fa-solid fa-chevron-right fa-xl"></i> Birthday: 5 February 1996</p>
+                            <p><i class="fa-solid fa-chevron-right fa-xl"></i> Github: <a
+                                    href="https://github.com/SunghyunBack" target="_blank">https://github.com/SunghyunBack</a>
+                            </p>
+                            <p><i class="fa-solid fa-chevron-right fa-xl"></i> Notion: <a
+                                    href="https://www.notion.so/Back-Sung-Hyun-c9f91a3228204368a7fd9f5052cf0468"
+                                    target="_blank">https://www.notion.so/Back-Sung-Hyun</a></p>
+                            <p><i class="fa-solid fa-chevron-right fa-xl"></i> Phone: 010-8682-5001</p>
+                        </div>
+                        <div class="site2">
+                            <p><i class="fa-solid fa-chevron-right fa-xl"></i> Age: 28</p>
+                            <p>
+                                <i class="fa-solid fa-chevron-right fa-xl"></i> Tistory:
+                                <a href="https://bbackcoding.tistory.com/" target="_blank">https://bbackcoding.tistory.com</a>
+                            </p>
+                            <p><i class="fa-solid fa-chevron-right fa-xl"></i> Email: sunghyun960205@gmail.com</p>
+                            <p><i class="fa-solid fa-chevron-right fa-xl"></i> City: Gyeongsan , Korea</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="item step-3">
+        <a name="step-3"></a>
+        <div class="step-3-1">
+            <header>SKILL</header>
+            <div class="skill-contain">
+                <div class="skill">
+                    <div class="title">FRONT</div>
+                    <div class="icon">
+                        <img th:src="@{../resources/images/free-icon-html-5-5968267.png}" alt="html">
+                        <img th:src="@{../resources/images/free-icon-css-3-5968242.png}" alt="css">
+                        <img th:src="@{../resources/images/js64.png}" alt="js">
+                    </div>
+                    <div class="text">
+                        <span>&nbsp;HTML과 CSS를 통해 웹 표준 준수한 기본적인 웹 페이지와 반응형 웹페이지 작성 가능합니다. JavaScript를 이용해 간단한 이벤트 효과를 구현하면 클론코딩과 ToyProject통해 완성도를 높이며 공부하고 있습니다.</span>
+                        <span>ajax와 xhr을 이용하여 동적인 웹사이트를 만들수 있습니다.</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="title">LANGUGE</div>
+                    <div class="icon">
+                        <img th:src="@{../resources/images/java_original_wordmark_logo_icon_146459.png}" alt="java">
+                        <img th:src="@{../resources/images/icons8-python-64.png}" alt="python">
+                    </div>
+                    <div class="text">
+                        <span>&nbsp;개발 입문 언어를 python으로 시작하여 감을 익혔습니다. 알고리즘 공부를 통해 문법과 감각을 유지하고 있습니다.</span>
+                        <br>
+                        <span>&nbsp;자바를 핵심언어로 생각하며 공부하고 있으며 자료구조와 알고리즘을 통해 학습하고 있습니다. 자바를 활용한 프로젝트(회원가입, 메모, 클론)만들며 훈련하고 있습니다.</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="title">FRAMEWORK</div>
+                    <div class="icon">
+                        <img th:src="@{../resources/images/icons8-봄-로고-64.png}" alt="spring">
+                        <img th:src="@{../resources/images/icons8-mariadb-64.png}" alt="mariadb">
+                    </div>
+
+                    <div class="text">
+                        <span>&nbsp;MariaDB를 통해 스키마,테이블,레코드를 생성할때 제약조건과 Join을 사용하여 프로젝트에 방향에 맞게 설정을할수 있습니다.</span>
+                        <br>
+                        <span>&nbsp;Spring Boot를 이용해 Dependency, Thymeleaf, annotation, mybatis를 사용하며 웹 개발 프레임 워크를 구축할수 있으며, 데이터베이스와 연동하여 기본적인 CRUD기능을 구현할수 있습니다.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item step-4">
+        <a name="step-4"></a>
+        <div class="step-4-1">
+            <header>PROJECT</header>
+            <div class="boundary">
+                <div class="slidebox">
+                    <ul class="slides">
+                        <li class="slide slide4">
+                            <div class="project-img">
+                                <img th:src="@{../resources/images/projectImage/맛집.png}" alt="맛집 구버젼">
+                            </div>
+                            <div class="project-text">
+                                <div class="text">
+                                    <p>
+                                        <span>
+                                            <h3>Study Matzip</h3>
+                                        </span>
+                                    </p>
+                                    <p>
+                                    <p>- Spring-boot를 이용한 프레임워크 구축 프레임 워크를 구축했다.</p>
+                                    <p>- CRUD기능 구현</p>
+                                    <p>- 로그인, 회원가입, 아이디,비밀번호찾기 구현</p>
+                                    <p>- 페이징 구현</p>
+
+                                    </p>
+                                    <div>
+                                        <h3>설계/프로세스</h3>
+                                        <p>개발도구 : IntelliJ</p>
+                                        <p>개발 언어 : java, mariaDB, MyBatis, HTML, CSS, JavaScript, Springboot</p>
+                                    </div>
+                                </div>
+                                <div class="url">
+                                    <p class="p5"><a href="https://github.com/SunghyunBack/CloneMatzip">Going GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide slide2">
+                            <div class="project-img">
+                                <img th:src="@{../resources/images/projectImage/toyproject 이미지.png}" alt="메모">
+                            </div>
+                            <div class="project-text">
+                                <div class="text">
+                                    <p class="p1"><span><h3>십이간지 연애 유형</h3></span></p>
+                                    <p class="p2">
+                                    <p>- JS의 오브젝트 구조의 이해</p>
+                                    <p>- 페이징</p>
+                                    <p>- JS의 슬라이드, 나타니기 효과 </p>
+                                    </p>
+                                    <p class="p3">
+                                    <h3>설계/프로세스</h3></p>
+                                    <p>개발도구 : IntelliJ</p>
+                                    <p class="p4">
+                                        <span>개발 언어 : HTML, CSS, JavaScript</span>
+                                    </p>
+                                </div>
+                                <div class="url">
+                                    <p class="p5">
+                                        <a href="https://github.com/SunghyunBack/Clone-ToyProject">Going GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide slide3">
+                            <div class="project-img">
+                                <img th:src="@{../resources/images/projectImage/맥딜리버리.png}" alt="메모">
+                            </div>
+                            <div class="project-text">
+                                <div class="text">
+                                    <p class="p1"><span><h3>맥 딜리버리 CLONE</h3></span></p>
+                                    <p class="p2">
+                                    <p>- HTML의 마크업 구조 연습 및 적용</p>
+                                    <p>- CSS의 flex 및 position 연습 및 적용</p>
+                                    </p>
+                                    <p class="p3">
+                                    <h3>설계/프로세스</h3></p>
+                                    <p class="p4"><span>개발 언어 : HTML, CSS</span></p>
+                                </div>
+                                <div class="url">
+                                    <p class="p5">
+                                        <a href="https://github.com/SunghyunBack/Mcdelivery">Going GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide slide1">
+                            <div class="project-img">
+                                <img th:src="@{../resources/images/projectImage/메모지 프로젝트 이미지.png}" alt="메모">
+                            </div>
+                            <div class="project-text">
+                                <div class="text">
+                                    <p>
+                                        <span>
+                                            <h3>메모장</h3>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <p>- CRUE기능 구현</p>
+                                        <p>- 페이징</p>
+                                        <p>- 검색</p>
+                                    </p>
+                                    <div>
+                                        <h3>설계/프로세스</h3>
+                                        <p>개발도구 : IntelliJ</p>
+                                        <p>개발 언어 : java, mariaDB, MyBatis, HTML, CSS, JavaScript</p>
+                                    </div>
+                                </div>
+                                <div class="url">
+                                    <p class="p5"><a href="https://github.com/SunghyunBack/study-memo-project">Going GitHub</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <button class="left-button" id="left-button">
+                    <i class="fa-solid fa-angle-left fa-xl"></i>
+                </button>
+
+                <button class="right-button" id="right-button">
+                    <i class="fa-solid fa-angle-right fa-xl"></i>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
