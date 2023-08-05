@@ -69,11 +69,7 @@ if(currentIndex<slideCount-1){
 }
 })
 
-
-
 //  작은 화면일때 목록 아이콘 관련 버튼
-
-
 
 // 반응형 웹일때 메뉴 버튼 관련된것
 const toggleBtn = document.querySelector('.menu-button');
