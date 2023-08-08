@@ -32,6 +32,9 @@ goToSlide = (idx) => {
     sliderContainer[0].classList.add('animated');
     currentIndex = idx;
     // updateNav();
+    setTimeout(() =>{
+        sliderContainer[0].classList.remove('aninated');
+    }, 500);
 }
 //  처음일때
 // updateNav = () => {
@@ -40,6 +43,19 @@ goToSlide = (idx) => {
 //     }else{
 //         navPrev.classList.remove('disabled');
 //     }
+updateNav = () => {
+    if (currentIndex === 0) {
+        navPrev.classList.add('disabled');
+    } else {
+        navPrev.classList.remove('disabled');
+    }
+
+    if (currentIndex === slideCount - 1) {
+        navNext.classList.add('disabled');
+    } else {
+        navNext.classList.remove('disabled');
+    }
+}
 // 마지막일대
 // if(currentIndex = slideCount-1){
 //         navPrev.classList.add('disabled');
@@ -72,14 +88,27 @@ if(currentIndex<slideCount-1){
 //  작은 화면일때 목록 아이콘 관련 버튼
 
 // 반응형 웹일때 메뉴 버튼 관련된것
-const toggleBtn = document.querySelector('.menu-button');
-const menu = document.querySelector('.list')
-const up = document.querySelector('.up')
-const down = document.querySelector('.down')
+// const toggleBtn = document.querySelector('.menu-button');
+// const menu = document.querySelector('.list')
+// const up = document.querySelector('.up')
+// const down = document.querySelector('.down')
+//
+// toggleBtn.addEventListener('click', () => {
+//  menu.classList.toggle('active');
+//  up.classList.toggle('active');
+//  down.classList.toggle('active');
+// });
 
-toggleBtn.addEventListener('click', ( ) => {
- menu.classList.toggle('active');
- up.classList.toggle('active');
- down.classList.toggle('active');
-});
-
+// document.addEventListener('DOMContentLoaded', () => {
+//     const toggleBtn = document.querySelector('.menu-list');
+//     const menu = document.querySelector('.list');
+//     const up = document.querySelector('.up');
+//     const down = document.querySelector('.down');
+//
+//     toggleBtn.addEventListener('click', () => {
+//         menu.classList.toggle('item');
+//         up.classList.toggle('item');
+//         down.classList.toggle('item');
+//     });
+//
+// });
