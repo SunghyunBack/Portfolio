@@ -644,10 +644,6 @@ button {
         padding: 0;
     }
 
-    .mainContainer > .item > .step-1-1 > h1 {
-
-    }
-
 
     .mainContainer > .item > .step-1-1 > .h2 > .h2-span-2 {
         color: transparent;
@@ -697,10 +693,6 @@ button {
 
     }
 
-    .mainContainer > .step-2 > .step-2-1 {
-
-
-    }
 
     .mainContainer > .step-2 > .step-2-1 > header {
         font-size: 2rem;
@@ -711,9 +703,9 @@ button {
     }
 
     .mainContainer > .step-2 > .step-2-1 > .sub-title {
-
+        margin: 0;
         width: 90%;
-        height: 10rem;
+        height: 8rem;
         text-align: center;
     }
 
@@ -733,7 +725,7 @@ button {
     .mainContainer > .step-2 > .step-2-1 > .information > .photo {
         width: 80%;
         height: 100%;
-        margin-top: 1rem;
+        /*margin-top: 1rem;*/
 
         align-items: center;
         display: flex;
@@ -742,7 +734,6 @@ button {
     }
 
     .mainContainer > .step-2 > .step-2-1 > .information > .text {
-        padding-top: 0.5rem;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -750,15 +741,15 @@ button {
     }
 
     .mainContainer > .step-2 > .step-2-1 > .information > .text > h3 {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
     }
 
     .mainContainer > .step-2 > .step-2-1 > .information > .text > h5 {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
     }
 
     .mainContainer > .step-2 > .step-2-1 > .information > .text > .self {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
     }
 
     .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief {
@@ -771,7 +762,8 @@ button {
     }
 
     .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site > p {
-        margin-bottom: 0.25rem;
+        margin-bottom: 0;
+        font-size: 1rem;
     }
 
     .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site2 {
@@ -779,7 +771,8 @@ button {
     }
 
     .mainContainer > .step-2 > .step-2-1 > .information > .text > .brief > .site2 > p {
-        margin-bottom: 0.25rem;
+        font-size: 1rem;
+        margin-bottom: 0;
     }
 
 
@@ -803,7 +796,7 @@ button {
         height: 3rem;
         font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
-        margin: 0 0 1rem 0;
+        margin: 0 0 0.5rem 0;
     }
 
 
@@ -816,6 +809,7 @@ button {
         flex-direction: column;
         justify-content: center;
         position: unset;
+        margin: 0;
         /*padding-top: 4rem;*/
     }
 
@@ -831,7 +825,8 @@ button {
     .mainContainer > .step-3 > .step-3-1 > .skill-contain > .skill > .title {
         width: 100%;
         height: auto;
-        /*font-size: 1.8rem;*/
+        padding: 0;
+        margin: 0.5rem 0;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
     }
@@ -850,11 +845,11 @@ button {
 
     .mainContainer > .step-4 {
         width: 100%;
-        height: 100%;
-align-items: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
     }
 
@@ -917,9 +912,6 @@ justify-content: center;
 }
 
 @media screen and (max-width: 530px) {
-    .mainContainer > .step-1 > .step-1-1 > h1 {
-
-    }
 
     .mainContainer > .step-1 > .step-1-1 > h2 {
         align-items: center;
@@ -936,7 +928,6 @@ justify-content: center;
     }
 
     .mainContainer > .item > .step-1-1 > .h2 {
-
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -972,7 +963,8 @@ justify-content: center;
 @media screen and (max-width: 373px) {
 
     .mainContainer > .step-2 > .step-2-1 > header {
-        margin: 1rem;
+        /*margin: 1rem;*/
+        margin-bottom: 1rem;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         width: 40%;
@@ -985,6 +977,10 @@ justify-content: center;
         width: 20rem;
         height: 3rem;
         font-family: 'Montserrat', sans-serif;
+    }
+
+    .mainContainer > .step-2 > .step-2-1 > .information > .text > h3 {
+        font-size: 1.5rem;
     }
 
 }
